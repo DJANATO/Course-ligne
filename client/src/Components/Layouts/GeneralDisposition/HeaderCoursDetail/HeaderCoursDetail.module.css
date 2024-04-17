@@ -1,0 +1,120 @@
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIABLE ================ */
+:root {
+  --primary-color: hsl(177, 94%, 61%);
+  --primary-color-alt: hsl(29, 78%, 68%);
+  --second-color: #ff0000;
+  --second-color-alt: hsla(220, 92%, 44%, 0.65);
+  --third-color: hsl(220, 36%, 28%);
+  --white-color: #bc8ef1;
+  --white-color-alt: hsl(12, 14%, 93%);
+  --dark-color:  #6918c6;
+}
+
+/* ================= BASE ==================== */
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.bx {
+  font-size: 2.5rem;
+}
+.container {
+  padding: 0 2rem;
+}
+
+/* -- BODY -- */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  background-color: var(--white-color);
+}
+
+/* ================= HEADER ================ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+ /*  padding: 1rem 2rem; */
+ height: 10vh;
+}
+.companyLogo {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.companyDetail{
+    font-size: 2rem;
+    background: -webkit-linear-gradient(
+        120deg,
+        var(--primary-color-alt),
+        var(--primary-color)
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.navItems {
+  display: flex;
+}
+.navItem {
+  margin: 0 2rem;
+}
+.navLink {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  position: relative;
+  background: -webkit-linear-gradient(
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navLink::before {
+  content: "";
+  background: linear-gradient(var(--primary-color), var(--primary-color-alt));
+  width: 100%;
+  height: 0.05rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 150ms;
+}
+.navLink:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.menuToggle {
+  display: none;
+}
+.bx-menu,
+.bx-x {
+  cursor: pointer;
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none !important;
+}

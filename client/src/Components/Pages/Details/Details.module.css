@@ -1,0 +1,43 @@
+.contain{
+    background:linear-gradient(#141e30, #243b55) ;
+    background-image: url('../../../images/Inscription.jpg');
+    height: 92vh;
+    width: 100%;
+    color: white;
+}
+.container{
+    height: 92vh;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    
+}
+video{
+    height: 55vh;
+    width: 80%;
+    position: relative;
+    left: 35vh;
+
+}
+.descri{
+    height: 25vh;
+    width: 85%;
+    background:linear-gradient(#141e30, #243b55) ;
+    border-radius: 1vh;
+    position: relative;
+    left: 32vh;
+    overflow-y: scroll;
+}
+.descri p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bn{
+    width: 4%;
+    position: relative;
+    left: 2vh;
+}
